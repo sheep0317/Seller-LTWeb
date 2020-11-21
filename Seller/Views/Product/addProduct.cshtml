@@ -1,0 +1,40 @@
+﻿
+@model Seller.Models.Product
+@Html.ValidationSummary(true)
+@using (Html.BeginForm("addProduct","Product"))
+{
+    <form action="/Product/addProduct" method="post">
+        <div class="container">
+            <p>
+                ID San Pham:
+                @Html.TextBoxFor(m => m.pID,new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.pID)
+            </p>
+            <p>
+                Ten San Pham:
+                @Html.TextBoxFor(m => m.pName, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.pName)
+            </p>
+            <p>
+                Gia:
+                @Html.TextBoxFor(m => m.pGia, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.pGia)
+            </p>
+            <p>
+                So luong:            
+                @Html.TextBoxFor(m => m.pSoLuong, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.pSoLuong)
+            </p>
+            <p>Hinh Anh: <input type="file" name="pImg" /></p>
+            <p><button class="btn btn-light" type="submit">Upload</button></p>
+        </div>
+    </form>
+
+}
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+
+
