@@ -24,6 +24,6 @@ namespace Seller.Models
         public Nullable<int> pSoLuong { get; set; }
         [Range(0, 99999999, ErrorMessage = "input right price!"), Required(ErrorMessage = "Piece cannot be empty")]
         public Nullable<int> pGia { get; set; }
-        public string pImg { get; set; }
+        public string pURL { get; set; }
     }
 }

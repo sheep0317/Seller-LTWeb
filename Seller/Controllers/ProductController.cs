@@ -23,7 +23,7 @@ namespace Seller.Controllers
                 Product.pName = Fields["pName"];
                 Product.pGia = Int32.Parse(Fields["pGia"]);
                 Product.pSoLuong = Int32.Parse(Fields["pSoLuong"]);
-
+                Product.pURL = Fields["pImg"];
                 _db.Product.Add(Product);
                 _db.SaveChanges();
                 return View("addProduct");
