@@ -12,6 +12,7 @@ namespace Seller.Controllers
     {
         // GET: Product
         public LTWebEntities _db = new LTWebEntities();
+       
         [HttpPost]
         public ActionResult addProduct(FormCollection Fields, Product model)
         {

@@ -56,11 +56,11 @@ a:hover{
 
 .cart_cardImg {
     cursor:pointer;
-    height:200;
 }
 
     .cart_cardImg img {
-   
+         height:auto;
+         width:auto;
        
     }
 
