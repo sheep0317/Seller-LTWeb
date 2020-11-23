@@ -86,7 +86,7 @@ namespace Seller.Controllers
             _db.Users.Add(user);
             _db.SaveChanges();
 
-            return RedirectToAction("Login", "Login");
+            return RedirectToAction("Index", "Home");
         }
         [HttpGet]
         public ActionResult Signup()

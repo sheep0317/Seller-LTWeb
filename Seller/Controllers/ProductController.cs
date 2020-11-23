@@ -7,7 +7,6 @@ using System.Web.Mvc;
 
 namespace Seller.Controllers
 {
-    [Authorize]
     public class ProductController : Controller
     {
         // GET: Product

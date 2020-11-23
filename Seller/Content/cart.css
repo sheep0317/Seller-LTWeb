@@ -55,14 +55,20 @@ a:hover{
 }
 
 .cart_cardImg {
-    cursor:pointer;
+    cursor: pointer;
+    padding-left: 10%;
 }
-
     .cart_cardImg img {
-         height:auto;
-         width:auto;
-       
+        width: 200px;
+        height: 250px;
+        
     }
+    .cart_cardImg img {
+        width: 150px;
+        height: 200px;
+    }
+
+   
 
 .cart_cardFoot {
     text-transform: uppercase;
@@ -71,8 +77,11 @@ a:hover{
     align-items: center;
     opacity: 0.7;
     transform: translateY(5px);
-}
 
+}
+    .cart_cardFoot p {
+        vertical-align: bottom;
+    }
     .cart_cardFoot img {
         width: 28px;
         margin-left: 5px;
