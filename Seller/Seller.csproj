@@ -319,6 +319,7 @@
     <Content Include="Views\Login\managerPage.cshtml" />
     <Content Include="Views\Category\Index.cshtml" />
     <Content Include="Views\Login\adminPage.cshtml" />
+    <Content Include="Views\Category\Details.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

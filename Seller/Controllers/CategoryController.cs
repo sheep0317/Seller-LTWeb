@@ -26,6 +26,19 @@ namespace Seller.Controllers
 
             return View(links.ToPagedList(pagenum, pageSize));
         }
-       
+        public ActionResult Details(string id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Product product = db.Product.Find(id);
+            if (product == null)
+            {
+                return HttpNotFound();
+            }
+            return View(product);
+        }
+
     }
 }

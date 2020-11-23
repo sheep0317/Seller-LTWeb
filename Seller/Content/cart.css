@@ -39,8 +39,8 @@ a:hover{
         color: black;
     }
 
-        .cart_card:hover .cart_cardFoot {
-            opacity: 1;
+        .cart_card:hover .cart_cardFoot{
+            opacity:1;
         }
 
 .cart_cardTitle {
@@ -60,11 +60,11 @@ a:hover{
 }
     .cart_cardImg img {
         width: 200px;
-        height: 250px;
+        height: 200px;
         
     }
     .cart_cardImg img {
-        width: 150px;
+        width: 200px;
         height: 200px;
     }
 
@@ -86,3 +86,4 @@ a:hover{
         width: 28px;
         margin-left: 5px;
     }
+   
