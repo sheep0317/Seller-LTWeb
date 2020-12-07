@@ -19,5 +19,10 @@ namespace Seller.Controllers
         //{
         //    return PartialView("~/Views/Category/Index.cshtml");
         //}
+        [ChildActionOnly]
+        public ActionResult managerbill()
+        {
+            return View();
+        }
     }
 }

@@ -37,14 +37,14 @@
     {
         <div class="container bg-white">
             <div class="row">
-                <div class="col-md-4 ">
+                <div class="col-m-4 ">
                     <form action="/upload/avatarChange" method="post">
                         <label for="image">
                             <input type="file" name="image" id="image" style="display:none;" />
-                            <img class="img-fluid rounded-circle" style="width:180px;" src="~/Data/avatar.jpg" />
+                            <img class=" rounded-circle mx-auto d-block" style="width:180px;" src="~/Data/avatar.jpg" />
                         </label>
                     </form>
-                    <h2>@Seller.Models.GlobalVari.userLog</h2>
+                    <h2 style="text-align:center;">@Seller.Models.GlobalVari.userLog</h2>
                 </div>
                 <div class="col-md-8">
                     <div class="right__cards">
@@ -70,18 +70,8 @@
                                 continue &nbsp;<img src="~/Data/arrow-right.svg" alt="">
                             </div>
                         </a>
-                        <a class="right__card" href="#">
-                            <div class="right__cardTitle">
-                                Xoa san pham
-                            </div>
-                            <div class="right__cardNumber">
-
-                            </div>
-                            <div class="right__cardDesc">
-                                continue &nbsp;<img src="~/Data/arrow-right.svg" alt="">
-                            </div>
-                        </a>
                     </div>
+                    @Html.Action("managerbill","Partial")
                 </div>
             </div>
         </div>

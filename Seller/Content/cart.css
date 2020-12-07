@@ -1,16 +1,17 @@
 ﻿.cart_grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     grid-column: 30px;
     margin-bottom: 20px;
+    padding-left:3%;
 }
 a:hover{
     text-decoration:none;
 }
 @media screen and (max-width: 1023px) {
     .cart_grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -56,14 +57,15 @@ a:hover{
 
 .cart_cardImg {
     cursor: pointer;
+    padding-left:10%;
 }
     .cart_cardImg img {
-        width: 200px;
+   
         height: 200px;
         
     }
     .cart_cardImg img {
-        width: 200px;
+
         height: 200px;
     }
 .cart_cardFoot {
@@ -82,4 +84,4 @@ a:hover{
         width: 28px;
         margin-left: 5px;
     }
-   
+

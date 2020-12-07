@@ -39,6 +39,10 @@ namespace Seller.Controllers
             }
             return View(product);
         }
+        public ActionResult shopcart()
+        {
+            return View();
+        }
 
     }
 }

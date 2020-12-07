@@ -23,7 +23,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav col-lg-9">
+                <ul class="navbar-nav col-sm-4">
                     <li class="nav-item">
                         <a class="nav-link" href="/Home/Contact">Contact</a>
                     </li>
@@ -31,7 +31,7 @@
                         <a class="nav-link" href="/Home/About">About</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav nav-item col-lg-3">
+                <ul style="padding-left:30%;" class ="navbar-nav nav-item col-xl-8">
 
                     @if (Seller.Models.GlobalVari.isLog)
                     {
@@ -40,8 +40,11 @@
                     }
                     else
                     {
+                        <li class=" nav-item"><a class=" nav-link" href="#"><i class="fas fa-shopping-cart"></i> Gio Hang</a></li>
                         <li class="nav-item"><a class="nav-link" href="\Login\Signup"><i class="fas fa-user"></i> Sign Up</a></li>
                         <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#login"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                       
+                        
                     }
 
                 </ul>
@@ -101,18 +104,5 @@
         </div>
     </div>
 </div>
-<div class="modal fade" id="signUp">
-    <div class="modal-dialog-centered modal-dialog ">
-        <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-                <h4 class="modal-title">Login</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <!-- Modal body -->
-           
-            </div>
-        </div>
-    </div>
-</div>
+
 </html>
